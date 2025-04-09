@@ -20,7 +20,7 @@ export const marketplaceData: MarketplaceItem[] = [
   {
     id: 'wl-2',
     name: 'DeFi Degens WL',
-    description: 'Priority access to DeFi Degens' private investment round.',
+    description: 'Priority access to DeFi Degens private investment round.',
     cost: 3000,
     category: 'wl',
   },
