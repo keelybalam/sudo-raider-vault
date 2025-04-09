@@ -13,16 +13,16 @@ const InfoBox: React.FC<InfoBoxProps> = ({ visible }) => {
       <h3 className="text-xl font-bold mb-2">How $SUDO Points Work</h3>
       <div className="space-y-3 text-left">
         <p>
-          <span className="font-medium">Earn:</span> Accumulate $SUDO points through community engagement, trading, and participation in Sudo Protocol events.
+          <span className="font-medium">What Are Points?</span> Points are earned by completing daily raid missions, engaging in the Sudo community, and recruiting new Raiders. These points fuel your journey through the vault.
         </p>
         <p>
-          <span className="font-medium">Spend:</span> Points are a non-transferable currency that can be redeemed for exclusive benefits and rewards in this marketplace.
+          <span className="font-medium">How Do They Work?</span> You can stack points endlessly before the $SUDO token launches, or spend them now to grab WLs, rare items, and chaos boosters inside this marketplace.
         </p>
         <p>
-          <span className="font-medium">Value:</span> Once points are spent, they're burned forever - choose wisely what you claim!
+          <span className="font-medium">Be Strategic.</span> Some will burn early for WL glory. Others will hoard and convert to $SUDO. The choice is yours — but either way, it's all degen-coded.
         </p>
         <p className="text-sm italic mt-4">
-          Note: All marketplace transactions are final. Claimed items cannot be returned or exchanged.
+          Raid daily. Stack ruthlessly. Spend wisely. The vault doesn't sleep.
         </p>
       </div>
     </div>
