@@ -61,7 +61,7 @@ const MarketplaceItem: React.FC<MarketplaceItemProps> = ({
         onClick={handleClaim}
         disabled={isClaimed}
       >
-        {isClaimed ? '✅ Claimed' : 'Claim Now'}
+        {isClaimed ? '✅ Claimed' : 'Purchase Now'}
       </button>
     </div>
   );

@@ -8,25 +8,27 @@ interface MarketplaceGridProps {
   claimedItems: string[];
   userPoints: number;
   onClaim: (itemId: string, cost: number) => void;
+  items?: ItemType[];
 }
 
 const MarketplaceGrid: React.FC<MarketplaceGridProps> = ({ 
   category, 
   claimedItems, 
   userPoints, 
-  onClaim 
+  onClaim,
+  items
 }) => {
-  if (!category) return null;
+  if (!category && !items) return null;
   
-  const items = getCategoryItems(category);
+  const displayItems = items || (category ? getCategoryItems(category) : []);
   
-  if (items.length === 0) {
+  if (displayItems.length === 0) {
     return <div className="text-center py-8">No items available in this category.</div>;
   }
   
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-      {items.map((item: ItemType) => (
+      {displayItems.map((item: ItemType) => (
         <MarketplaceItem
           key={item.id}
           item={item}
