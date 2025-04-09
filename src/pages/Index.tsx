@@ -56,10 +56,10 @@ const Index: React.FC = () => {
         
         {showingClaimed ? (
           <div className="mt-6">
-            <h2 className="text-2xl font-bold mb-6">My Claimed Items</h2>
+            <h2 className="text-2xl font-bold mb-6">My Purchased Items</h2>
             {claimedItemsData.length === 0 ? (
               <div className="text-center py-12 bg-black/20 rounded-xl">
-                <p className="text-xl">You haven't claimed any items yet.</p>
+                <p className="text-xl">You haven't purchased any items yet.</p>
                 <Button 
                   variant="outline" 
                   className="mt-4"

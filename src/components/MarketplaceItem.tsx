@@ -23,8 +23,8 @@ const MarketplaceItem: React.FC<MarketplaceItemProps> = ({
   const handleClaim = () => {
     if (isClaimed) {
       toast({
-        title: "Already claimed",
-        description: "You've already claimed this item.",
+        title: "Already purchased",
+        description: "You've already purchased this item.",
         variant: "destructive",
       });
       return;
@@ -41,8 +41,8 @@ const MarketplaceItem: React.FC<MarketplaceItemProps> = ({
     
     onClaim(item.id, item.cost);
     toast({
-      title: "Item claimed!",
-      description: `You've successfully claimed ${item.name}`,
+      title: "Item purchased!",
+      description: `You've successfully purchased ${item.name}`,
     });
   };
   
@@ -61,7 +61,7 @@ const MarketplaceItem: React.FC<MarketplaceItemProps> = ({
         onClick={handleClaim}
         disabled={isClaimed}
       >
-        {isClaimed ? '✅ Claimed' : 'Purchase Now'}
+        {isClaimed ? '✅ Purchased' : 'Purchase Now'}
       </button>
     </div>
   );
